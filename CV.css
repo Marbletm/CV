@@ -1,0 +1,65 @@
+@page {
+    size: A4;
+}
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #6c6c6c;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1cm;
+
+    margin: 5px 0;
+
+    padding: 1cm;
+
+    width: calc(21cm - 1cm);
+    height: calc(29.7cm - 1cm);
+    /*background-color: #efefef;*/
+    background-color: floralwhite;
+    /*background-color: white;*/
+    /*background-image: url('assets/backdrop.png');*/
+    background-size: cover;
+    overflow: hidden;
+}
+
+block {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 15px 26px -17px #00000040;
+
+    width: fit-content;
+    height: fit-content;
+
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+
+    padding: 40px 12.5px;
+    border-radius: 30px;
+}
+
+.headshot {
+    border-radius: 10000px;
+    width: 5cm;
+}
